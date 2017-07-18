@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+
+/*Header*/
+
+.global-header {
+  height: 300px;
+  background: url("../img/arcade-fire.jpg") no-repeat 50% 0;
+  background-size: cover;
+  padding-top: 35px;
+}
+
+
+/*Logo*/
+
+.logo {
+  display: block;
+  width: 140px;
+  height: 77px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: url("../img/arcadefire-logo.png") no-repeat 50% 50%;
+  background-size: cover;
+  text-indent: -9999px;
+}
+
+
+/*Navigation*/
+
+.nav {
+  padding: 10px 15px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #222;
+}
+
+.nav--min {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav__item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav__link {
+  display: block;
+  transition: all 0.5s ease;
+  color: rgba(255, 255, 255, 0.44);
+}
+
+.nav__link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav__item--active .nav__link {
+  color: #fff;
+}
+
+
+/*Albums*/
+
+.albums {
+  padding: 21px 15px 39px;
+  margin: 0;
+  list-style: none;
+}
+
+.albums::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.albums__item {
+  float: left;
+  padding: 0 25px;
+  width: 33.3333333%;
+  margin-top: 24px;
+}
+
+.album__info {
+  margin-top: 8px;
+  text-align: center;
+  color: rgb(34, 34, 34);
+  line-height: 24px;
+}
+
+.album__title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.album__year {
+font-size: 14px;
+}
+
+/*Footer*/
+
+.global-footer {
+  background: #222;
+}
+
+.logo--min {
+  width: 100px;
+  height: 55px;
+}
+
+.copyright {
+  margin: 0 auto;
+  padding: 55px 15px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright__text {
+  margin: 25px 0 0;
+  line-height: 10px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
